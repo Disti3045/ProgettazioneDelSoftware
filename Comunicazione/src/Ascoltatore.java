@@ -85,6 +85,7 @@ public class Ascoltatore implements ActionListener{
 				input.setText("");
 				} catch (IOException ex) {
 					System.out.println(ex);
+					output.setText("Porta invalida");
 				}
 			}
 		}else if(e.getActionCommand().equals("Disconnect")) {
@@ -103,4 +104,5 @@ public class Ascoltatore implements ActionListener{
 			}
 		}
 	}
+
 }

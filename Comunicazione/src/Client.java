@@ -80,11 +80,15 @@ public class Client {
 		send.addActionListener(al);
 		connect.addActionListener(al);
 		disconnect.addActionListener(al);
+
+		output.setText("Inserisci la porta di connesione");
+		input.setText("6767");
 		
 		finestra.pack();
 		finestra.setVisible(true);
 		finestra.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
+
 
 

@@ -50,11 +50,11 @@ public class Client {
 		JPanel mid = new JPanel();
 		JPanel bot = new JPanel();
 		
-		JButton send = new JButton("Send");
-		bot.add(send);
-		
 		JButton connect = new JButton("Connect");
 		bot.add(connect);
+		
+		JButton send = new JButton("Send");
+		bot.add(send);
 		
 		JButton disconnect = new JButton("Disconnect");
 		bot.add(disconnect);
@@ -86,4 +86,5 @@ public class Client {
 		finestra.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
+
 

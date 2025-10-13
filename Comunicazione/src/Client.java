@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 
 
@@ -43,8 +44,8 @@ public class Client {
 	
 	public static void ClientUI() {
 		JFrame finestra = new JFrame("Client");
-		finestra.setLayout(new FlowLayout());
-		
+		//finestra.setLayout(new FlowLayout());
+		finestra.setLayout(new GridLayout(3,1));
 		JPanel top = new JPanel();
 		JPanel mid = new JPanel();
 		JPanel bot = new JPanel();
@@ -85,3 +86,4 @@ public class Client {
 		finestra.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
+

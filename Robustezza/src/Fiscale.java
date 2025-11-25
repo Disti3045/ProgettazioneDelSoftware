@@ -14,8 +14,10 @@ public class Fiscale {
 			throw new NullPointerException("Operazione non consentita, Gettone nullo");
 		}else if(persona == null) {
 			throw new NullPointerException("Operazione non consentita, Persona nulla");
-		}else {
+		}else if(this.titolare==null){
 			this.titolare = persona;
+		}else {
+			throw new RuntimeException("Titolare già assegnato");
 		}
 	}
 	

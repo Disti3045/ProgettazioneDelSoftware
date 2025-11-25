@@ -20,8 +20,10 @@ public class Persona {
 			throw new NullPointerException("Operazione non consentita, Gettone nullo");
 		}else if(cf == null) {
 			throw new NullPointerException("Operazione non consentita, Codice Fiscale nullo");
-		}else {
+		}else if(this.cf==null){
 			this.cf = cf;
+		}else {
+			throw new RuntimeException("Codice fiscale già assegnato");
 		}
 	}
 	public Fiscale GetFiscale() {

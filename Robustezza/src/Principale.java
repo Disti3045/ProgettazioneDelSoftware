@@ -8,6 +8,7 @@ public class Principale {
 		Fiscale q_cf = new Fiscale("LBRPLN82B28A150U", "26/11/2031");
 
 		Gettone.Set(p_cf, p);
+		//Gettone.Set(q_cf, p); // Runtime Exception
 		Gettone.Set(q_cf, q);
 		p.PrintFiscale();
 		q.PrintFiscale();
